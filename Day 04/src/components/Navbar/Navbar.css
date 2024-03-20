@@ -1,0 +1,119 @@
+.navbar {
+    /* background: linear-gradient(90deg, #0b3e27, #197149); */
+    background: radial-gradient(circle at -1% 57.5%, rgb(255, 233, 125) 20%, rgb(254, 148, 99) 80% );
+    color: black;
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    /* background-color: rgb(255, 255, 255); */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    /* position: fixed; */
+    width: 100%;
+    z-index: 1;
+
+    
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo img {
+    width: 60px;
+    height: auto;
+    margin: 0 20px;
+}
+
+.left {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    /* background-color: white; */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.nav-links li {
+    margin: 0 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s ease-in-out;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: #c67c06c8;
+}
+
+.right {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.hello {
+    padding-top: 10px;
+    font-weight: 500;
+}
+
+.link {
+    width: 70px;
+    /* background: linear-gradient(40deg,#45cafc,#303f9f) !important; */
+    /* background-color: #0d6efd; */
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    margin-top: 5px;
+    padding: 5px 10px; 
+    margin-right: 20px;
+}
+
+.actions {
+    color: black;
+    display: flex;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) { /* Adjust the breakpoint as needed */
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+        display: none;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        /* margin-left: 0;
+        padding-top: 0; */
+    }
+
+    .nav-links li {
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+
+    .right {
+        margin-top: 10px;
+    }
+
+    .link {
+        width: auto;
+        margin-right: 0;
+    }
+}
