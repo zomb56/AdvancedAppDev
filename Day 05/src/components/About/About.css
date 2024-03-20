@@ -1,0 +1,5 @@
+.about-container {
+    margin-top: 50px;
+    animation: fadeIn  1s ease-in-out;
+    font-weight: 500;
+}
