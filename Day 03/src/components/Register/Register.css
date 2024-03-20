@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+.register {
+  font-family: 'Raleway', sans-serif;
+  display: flex;
+  height:100vh;
+  background-image: url('../../assets/login.jpg');
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+.r-container {
+  position: absolute;
+  top: 50%;
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 600px;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  backdrop-filter: blur(4px); 
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.521); 
+}
+.r-welcome {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 60px 0;
+  color: white;
+}
+.r-welcome h1{
+  font-size: 45px ;
+  text-align: center;
+  /* background: linear-gradient(to right, #4abc68, #77ff77); */
+  background-color: #3c009d;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+.r-welcome h4{
+  font-size: 15px;
+  font-weight:400;
+  line-height: 50px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+.register-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.register-form label {
+  text-align: left;
+  width: 80%;
+  margin: 10px;
+  color: white;
+}
+.register-form input {
+  width: 80%;
+  padding-top: 10px;
+  border: none;
+  /* border-bottom: 1px solid rgb(0, 0, 0); */
+  background-color: transparent;
+  outline: none;
+  color: black;
+  font-size: 20px;
+  border-radius: 5px;
+  background-color: white;
+}
+.register-form button {
+  width: 60%;
+  margin: 20px;
+  margin-top: 40px;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  /* background: radial-gradient(circle at -1% 57.5%, rgb(19, 170, 82) 0%, rgb(0, 102, 43) 90%); */
+  letter-spacing: 1.5px;
+  color: white;
+  font-size: 16px;
+  font-weight: 300;
+  cursor: pointer;
+  background-color: #3c009d;
+  transition: background-color 0.8s;
+  
+}
+
+.register-form button:hover {
+  /* background: radial-gradient(circle at -1% 57.5%, rgb(0, 102, 43) 0%, rgb(0, 102, 43) 90%); */
+  background-color: #8551ed;
+}
+
+/* .register-form input:hover {
+  border-bottom: 3px solid #8BD8BD;
+} */
+
+.register-form a{
+  text-decoration: none;
+  color: white;
+}
+.addr {
+  width: 650px;
+  height: 470px;
+  /* background-image: url('../../assets/mobile.png'); */
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 20px;
+  position: absolute;
+  left: 110px;
+  top: 23%;
+  filter: brightness(80%) contrast(120%);
+}
+
+.login-link {
+  text-align: center;
+  /* margin-top: 20px; */
+  color: #ffffff;
+}
+
+.login-link a {
+  color: #3c009d;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+  color: #8551e4;
+}
