@@ -1,0 +1,51 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Three columns */
+    gap: 20px; /* Gap between cards */
+    margin-bottom: 30px;
+    justify-content: center;
+    margin-left: 350px;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden; /* Ensure image doesn't overflow */
+    max-width: 500px;
+    min-height: 350px;
+    margin: auto;
+    background-color: rgba(255,255,255,0.5);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%; /* Make the image fill the card */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h2 {
+    margin-top: 0;
+}
+
+.card-content p {
+    margin-bottom: 0;
+}
+
+.primary-grid {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    height: 100vh;
+    /* align-items: center; */
+    justify-content: center;
+    animation: fadeIn 1s ease-in-out;
+}
